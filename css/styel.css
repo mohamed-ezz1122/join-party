@@ -1,0 +1,183 @@
+:root{
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --main-text-bg:#ccc;
+    --text-color:#777;
+    --hover-color:#d62e33;
+}
+h1,h2,h3,h4,h5
+{
+    font-family: 'Barriecito', cursive;
+
+}
+body
+{
+    font-family: 'Bricolage Grotesque', sans-serif;
+
+}
+
+/* nav style */
+nav{
+    background-color: black;
+    width: 20%;
+}
+nav ul{
+    list-style: none;
+    
+}
+nav ul a:hover{
+    color: var(--red);
+}
+nav ul a{
+    text-decoration: none ;
+    margin-inline: 1.25rem;
+    color: #eee;
+    font-weight: bold;
+    font-size: 20px;
+    transition: color .5s;
+}
+ul li i{
+    top: 30px;
+    right: 30px;
+}
+nav .closeNav:hover{
+    color: #dc3545;
+}
+nav .closeNav{
+    cursor: pointer;
+    transition: color .5s;
+}
+
+header{
+    overflow: hidden;
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    background-image: url(../images/3402cc97-96cc-4bdf-9bf2-7cd083ce4c8f.webp);
+}
+header h1{
+    font-size: 70px;
+}
+header .head-content{
+    background-color: red;
+/* opacity:  .6; */
+    width: 100%;
+    height: 100vh;
+}
+
+header .btn-nav{
+    color: #eee;
+    font-size: 2.25rem;
+}
+
+.content .contentBody{
+    background-color: var(--main-text-bg);
+    text-align: center;
+    
+   
+}
+.content .contentHead
+{
+    cursor: pointer;
+    background-color: var(--pink);
+    text-align: center;
+}
+/* ==================================== */
+.timar 
+{
+    
+    background-size: cover;
+    background-position: center center;
+    background-image: url(../images/join\ us.jpeg);
+}
+.timar .contentLiear{
+    
+    width: 18.25rem;
+    height: 10.25rem;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.timar .timarLiear
+{
+    padding-block: 8.125rem;
+    color: #eee;
+    font-size: 2.25rem;
+    font-weight: bold;
+    
+   background-color:rgba(214, 46, 51 , 0.6) ;    
+
+}
+/* ==============================last section */
+.joinus h4{
+    font-weight: bold;
+    color: rgb(39, 38, 38);
+}
+.joinus .h1{
+    font-weight: bold;
+}
+.joinus p,span{
+    color: var(--text-color);
+}
+.joinus i{
+    color: var(--hover-color);
+}
+.joinus .links i:hover{
+    color: #eee;
+    background-color: var(--hover-color);
+    border: none;
+}
+.joinus .links i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: .5px solid black;
+    color: var(--hover-color);
+    padding: 10px 20px;
+    font-size: 1.25rem;
+    transition: all .4s;
+
+}
+
+              
+.numLeater{
+    color: var(--hover-color) !important;
+}
+.btn-input:hover{
+    background-color: var(--hover-color);
+    color: #eee;
+}
+.btn-input:focus{
+    border:solid 1px #e83e8c  !important;
+    
+    
+}
+.btn-input
+{
+    color: #eee;
+    background-color: var(--hover-color);
+}
+
+@media screen and (max-width: 770px) {
+  .timarLiear .container
+  {
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  header h1{
+    font-size: 30px;
+}
+  }
+  @media screen and (max-width: 1400px) and (min-width: 600px)
+  {
+    .timarLiear .container
+    {
+        gap: 2.25rem;
+
+    }
+    .timarLiear .container .contentLiear{
+        margin-left: 10px;
+    }
+
+  }
